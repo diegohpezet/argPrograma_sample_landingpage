@@ -1,0 +1,15 @@
+#intro {
+    background-image: url('img/banner-principal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#aboutus {
+    background-color: #E8E8E8;
+    height: 50vh;
+}
+
+#help {
+    height: 50vh;
+}
