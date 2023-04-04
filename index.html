@@ -1,83 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <title>Clase 11 - Pezet</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
+  <title>Clase 11 - Pezet</title>
 </head>
+
 <body>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="img/logo.svg" alt="admin">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Quiénes somos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Cómo funciona</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">FAQs</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Login</a>
-              </li>
-            </ul>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.svg" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#intro">Quienes somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#help">Cómo funciona</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faqs">FAQS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn rounded-pill px-3" id="loginBtn">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Introduction-->
+  <div class="d-flex justify-content-center align-items-center" id="intro">
+    <div class="container text-center text-light">
+      <h1 id="mainTitle" class="title">Cada día, mejor</h1>
+      <p class="text-light">
+        La red más eficiente de profesionales para tu desarrollo y bienestar
+        emocional.
+      </p>
+      <button class="btn rounded-pill mt-3">COMENZAR</button>
+    </div>
+  </div>
+
+  <!--About us-->
+  <div class="d-flex justify-content-center align-items-center" id="aboutus">
+    <div class="container text-center">
+      <span>CONOCENOS</span>
+      <h2 class="title">Quienes somos</h2>
+      <p class="mt-5">
+        En <b>Anima-T</b> colaboramos con la construcción de un mundo mejor a
+        partir de empoderar y habilitar a las personas para que alcancen su
+        mejor versión. A través de esta plataforma, acercamos clientes y
+        profesionales, brindando un espacio de conexión para facilitar un
+        proceso hacia el bienestar emocional, el logro de objetivos y el
+        desarrollo personal, en cualquier momento y en cualquier lugar.
+      </p>
+    </div>
+  </div>
+
+  <!--Help-->
+  <div class="container text-center" id="help">
+    <h2 class="my-5 title">¿Buscás ayuda?</h2>
+    <div class="row d-flex justify-content-center my-5">
+      <div class="col col-xs-12 col-sm-8 col-md-6 col-lg-3">
+        <img src="img/icono-preguntas.svg" alt="preguntas" />
+        <h2>01.</h2>
+        <p>Responde unas preguntas para conocer tu perfil y lo que buscás.</p>
+      </div>
+      <div class="col col-xs-12 col-sm-8 col-md-6 col-lg-3">
+        <img src="img/icono-profesionales.svg" alt="profesionales" />
+        <h2 class="">02.</h2>
+        <p>
+          Accede al ranking de profesionales que construimos para ayudarte.
+        </p>
+      </div>
+      <div class="col col-xs-12 col-sm-8 col-md-6 col-lg-3">
+        <img src="img/icono-agenda.svg" alt="agenda" />
+        <h2>03.</h2>
+        <p>Acuerda un encuentro virtual para comenzar tu proceso.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!--Join us-->
+  <div id="joinus">
+    <div class="container d-flex text-light justify-content-center p-5">
+      <h2 class="text-light">Si brindás ayuda y te interesa sumarte</h2>
+      <button class="btn rounded-pill mx-3">Hacé click aquí</button>
+    </div>
+  </div>
+
+  <!--FAQs-->
+  <div class="text-center py-5" id="faqs">
+    <div class="container">
+      <span>CONOCENOS</span>
+      <h2 class="title">Preguntas Frecuentes</h2>
+    </div>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Pregunta 1
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mt-2">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Pregunta 2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mt-2">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Pregunta 3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mt-2">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Pregunta 4
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mt-2">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Pregunta 5
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
-
-      <!--Introduction-->
-      <div class="d-flex justify-content-center align-items-center" id="intro">
-        <div class="text-center text-light">
-            <h1>Cada día, mejor</h1>
-            <p>La red más eficiente de profesionales para tu desarrollo y bienestar emocional.</p>
-            <button class="btn btn-primary rounded-pill mt-3">COMENZAR</button>
+        <div class="col">
+          <img src="img/ilustracion-faqs.svg" alt="ilustración-faqs" class="img-fluid">
         </div>
       </div>
+    </div>
+  </div>
 
-      <!--About us-->
-      <div class="d-flex justify-content-center align-items-center" id="aboutus">
-        <div class="container text-center">
-            <span>CONOCENOS</span>
-            <h2>Quienes somos</h2>
-            <p class="mt-5">En <b>Anima-T</b> colaboramos con la construcción de un mundo mejor a partir de empoderar y habilitar a las personas para que alcancen su mejor versión.
-            A través de esta plataforma, acercamos clientes y profesionales, brindando un espacio de conexión para facilitar un proceso hacia el bienestar emocional, el logro de objetivos y el desarrollo personal, en cualquier momento y en cualquier lugar.</p>
+  <!--Start-->
+  <div class="d-flex justify-content-center align-items-center" id="start">
+    <div class="container text-center text-light">
+      <h2 class="title text-light">Desarróllate hacia tus sueños, fácil, rápido y desde cualquier lugar</h2>
+      <button class="btn rounded-pill mt-3">COMENZAR</button>
+    </div>
+  </div>
+
+  <!--Footer-->
+  <footer class="footer">
+    <div class="container">
+      <div class="d-flex justify-content-between pt-5">
+        <div>
+          <a href="#" class="text-white text-decoration-none">Términos y Condiciones</a>
+          <a href="#" class="text-white text-decoration-none px-3">Contáctenos</a>
+        </div>
+        <div id="social">
+          <a href="#" class="btn btn-light rounded-pill"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="btn btn-light rounded-pill"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="btn btn-light rounded-pill"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
-
-      <!--Help-->
-      <div class="container" id="help">
-
+      <hr />
+      <div class="text-center text-white">
+        <p id="copyright">@2020 Todos los derechos reservados - anima-t</p>
       </div>
-
-      <!--Join us-->
-      <div class="container" id="joinus">
-
-      </div>
-
-      <!--FAQs-->
-    <div class="container" id="faqs">
-
     </div>
+  </footer>
 
-    <!--Start-->
-    <div class="container" id="start">
-
-    </div>
-
-    <!--Bootstrap script-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  <!--Bootstrap script-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
